@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+header {
+  position: absolute;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  top: 0;
+  width: 100%;
+  height: 62px;
+  box-sizing: border-box;
+  padding: 16px;
+  z-index: 6;
 }
 
-.App-link {
-  color: #61dafb;
+.header-inner {
+  max-width: 1272px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-img {
+  position: relative;
+  width: 100vw;
+}
+
+.bg-img-mid,
+.bg-img-top,
+.bg-over-light {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+}
+.bg-img {
+  z-index: 1;
+}
+
+.bg-img-mid {
+  z-index: 3;
+}
+
+.bg-img-top {
+  z-index: 4;
+}
+
+.bg-over-light {
+  z-index: 5;
+}
+
+.coin-container {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  max-height: 270px;
+  z-index: 2;
+  top: 30vw;
+}
+
+.coin {
+  height: 15.06vw;
+  width: 15.06vw;
+  background-image: url("./assets/images/img65.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 3.18vw;
+}
+
+.hotem-features {
+  position: relative;
+  height: 848px;
+  width: 100%;
+  background-color: #fff;
 }
