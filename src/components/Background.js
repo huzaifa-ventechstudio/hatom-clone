@@ -23,11 +23,7 @@ const bottomPosition = () => {
 export default function Background() {
   const [state, setState] = useState(false);
   const [transform, setTransform] = useState("99.6%");
-  // const [coinStyle, setCoinStyle] = useState({ top: "0px" });
-  const [coinStyle, setCoinStyle] = useState({
-    top: "30vw",
-    position: "fixed",
-  });
+  const [coinStyle, setCoinStyle] = useState({ top: "0px" });
 
   const coinPosition = () => {
     let top = topPosition();
