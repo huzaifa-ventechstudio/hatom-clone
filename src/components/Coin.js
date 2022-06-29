@@ -4,7 +4,10 @@ export default function Coin({ transform, coinStyle }) {
   return (
     <div
       id="coin"
-      style={{ backgroundPositionY: transform, top: coinStyle.top }}
+      style={{
+        backgroundPositionY: transform,
+        top: coinStyle.top,
+      }}
     ></div>
   );
 }

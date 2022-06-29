@@ -31,14 +31,14 @@ export default function Understanding() {
       <div className="understanding">
         <h2>Understanding Hatom</h2>
         <div className="card-container">
-          {data.map((el) => {
+          {data.map((el, index) => {
             return (
-              <div className="card-deatils">
-                <img src={el.img} />
-                <div>
+              <div key={index} className="card-deatils">
+                <img src={el.img} alt="images" />
+                <div className="card-btm">
                   <h3>{el.title}</h3>
                   <p>{el.description}</p>
-                  <a>
+                  <a href="#">
                     Learn More <img src={Arrow} />
                   </a>
                 </div>

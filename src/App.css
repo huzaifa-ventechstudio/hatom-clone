@@ -1,10 +1,17 @@
+@font-face {
+  font-family: "Haas";
+  src: url("./assets/font/NHaasGroteskTXPro-55Rg.woff"),
+    url("./assets/font/NHaasGroteskTXPro-65Md.woff"),
+    url("./assets/font/NHaasGroteskTXPro-75Bd.woff");
+}
+
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: ui-serif, Georgia, Times, serif;
+  font-family: "Haas", ui-serif, Georgia, Times, serif;
 }
 
 .app-container {
@@ -30,6 +37,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-inner ul {
@@ -46,6 +54,23 @@ header {
   text-transform: capitalize;
   font-size: 14px;
   margin-right: 10px;
+}
+
+header .button-container button {
+  background: linear-gradient(
+    90deg,
+    #46a273 -0.2%,
+    #46a273 0.36%,
+    #133641 100.2%
+  );
+  width: 86px;
+  height: 35px;
+  font-size: 12px;
+  padding: 10px;
+  margin-right: 10px;
+  color: #fff;
+  border-radius: 0.25rem;
+  border: none;
 }
 
 #main-container {
@@ -86,7 +111,7 @@ header {
 }
 
 #coin-container {
-  width: 100vw;
+  width: 94vw;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -95,7 +120,7 @@ header {
   max-height: 270px;
   z-index: 2;
   top: 30vw;
-  margin-left: 3vw;
+  margin-left: 6vw;
 }
 
 #coin {
@@ -103,7 +128,7 @@ header {
   width: 15.06vw;
   background-image: url("./assets/images/img65.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   position: absolute;
   margin: 0 auto;
 }
@@ -155,6 +180,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   /* margin: 0 auto; */
 }
 
@@ -176,16 +202,16 @@ header {
 #div-feature-btm {
   display: flex;
   justify-content: space-between;
-  height: 558px;
-  width: 100;
+  width: 100%;
   background-image: url("./assets/images/indicators-web.svg");
   background-repeat: no-repeat;
   background-position: 41% 5%;
+  flex: 1;
 }
 
 .left-feature,
 .right-feature {
-  width: 330px;
+  width: 320px;
 }
 
 .right-feature {
@@ -250,6 +276,7 @@ header {
 .card-container .card-deatils p {
   font-size: 1.125rem;
   line-height: 1.75rem;
+  margin: 0;
 }
 .card-container a {
   font-size: 12px;
@@ -257,8 +284,17 @@ header {
   font-weight: 600;
   color: #3555f7;
 }
-
+.card-btm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 190px;
+}
 @media only screen and (max-width: 1279px) {
+  #coin {
+    width: 18.51vw;
+    height: 18.51vw;
+  }
   #div-feature-btm {
     background-image: url("./assets/images/indicators-mid.svg");
   }
@@ -275,7 +311,7 @@ header {
   }
 
   .right-feature {
-    width: 270px;
+    width: 240px;
   }
 
   .understanding {
@@ -285,3 +321,98 @@ header {
     padding: 0 1rem;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .div-feature-top h2 {
+    font-size: 1.875rem;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    width: 288px;
+    margin: 0 auto;
+  }
+
+  .dividends {
+    width: 282.59px;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 200px;
+  }
+
+  .dividend-heading {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .dividend-description {
+    width: 262px;
+    font-size: 1rem;
+    margin: 0 auto 20px;
+  }
+
+  #div-feature-btm {
+    background-image: url("./assets/images/indicators.svg");
+    background-position: 50% 5%;
+    background-size: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-feature,
+  .right-feature {
+    width: 295px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .hotem-features {
+    height: 1597.05px;
+    flex-direction: column-reverse;
+  }
+
+  .left-feature div:last-child {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .understanding-container,
+  .understanding {
+    height: auto;
+  }
+
+  .understanding h2 {
+    text-align: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-container .card-deatils {
+    width: 347.5px;
+    height: 420px;
+    margin-bottom: 30px;
+  }
+
+  .card-container .card-deatils h3 {
+    margin: 12px 0 6px 0;
+  }
+}
+
+/* @media only screen and (max-width: 640px) {
+  .bg-img,
+  .bg-img-mid,
+  .bg-img-top,
+  .bg-over-light {
+    aspect-ratio: 0.669902;
+  }
+} */
