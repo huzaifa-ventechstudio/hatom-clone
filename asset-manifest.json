@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hatom-clone/static/css/main.ad3ac9cf.css",
-    "main.js": "/hatom-clone/static/js/main.60947d32.js",
+    "main.js": "/hatom-clone/static/js/main.4f7c6296.js",
     "static/js/787.1e8c3623.chunk.js": "/hatom-clone/static/js/787.1e8c3623.chunk.js",
     "static/media/bg.svg": "/hatom-clone/static/media/bg.17ce9ea353e21689cd94250cf17d1864.svg",
     "static/media/img34.svg": "/hatom-clone/static/media/img34.8cc4f6062716fc9623ce0d37647e927e.svg",
@@ -22,11 +22,11 @@
     "static/media/indicators-web.svg": "/hatom-clone/static/media/indicators-web.ba1bb51c9d7058888c2f.svg",
     "static/media/indicators-mid.svg": "/hatom-clone/static/media/indicators-mid.d03675741312751fdb53.svg",
     "main.ad3ac9cf.css.map": "/hatom-clone/static/css/main.ad3ac9cf.css.map",
-    "main.60947d32.js.map": "/hatom-clone/static/js/main.60947d32.js.map",
+    "main.4f7c6296.js.map": "/hatom-clone/static/js/main.4f7c6296.js.map",
     "787.1e8c3623.chunk.js.map": "/hatom-clone/static/js/787.1e8c3623.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad3ac9cf.css",
-    "static/js/main.60947d32.js"
+    "static/js/main.4f7c6296.js"
   ]
 }
