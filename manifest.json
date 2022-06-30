@@ -5,7 +5,7 @@
   "background_color": "#fa99ca",
   "display": "standalone",
   "scope": "/",
-  "start_url": ".",
+  "start_url": "https://huzaifa-ventechstudio.github.io/hatom-clone/",
   "description": "It's a test PWA",
   "orientation": "any",
   "icons": [
