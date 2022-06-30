@@ -23,10 +23,10 @@ const bottomPosition = () => {
 export default function Background() {
   const [state, setState] = useState(false);
   const [transform, setTransform] = useState("99.6%");
-  // const [coinStyle, setCoinStyle] = useState({ top: "0px" });
   const [coinStyle, setCoinStyle] = useState({
     top: "30vw",
     position: "fixed",
+    condition: true,
   });
 
   const coinPosition = () => {
@@ -34,6 +34,7 @@ export default function Background() {
     let bottom = bottomPosition();
 
     let scrollValues = [
+      { transform: "0%" },
       { transform: "4.5%" },
       { transform: "9%" },
       { transform: "13.5%" },
@@ -76,23 +77,27 @@ export default function Background() {
 
     let state = { top, bottom, scrollValues };
 
-    console.log(state);
     window.addEventListener("scroll", () => {
       let scrollHeight = window.pageYOffset;
       let height = scrollHeight + state.top;
 
-      if (height < state.bottom) {
+      if (!coinStyle.condition || height < state.bottom) {
         setCoinStyle({
-          top: height - state.top + "px",
+          ...coinStyle,
+          top: "30vw",
+          position: "fixed",
+          condition: true,
         });
       } else if (height > state.bottom) {
-        setTransform("4.5%");
         setCoinStyle({
+          ...coinStyle,
+          position: "absolute",
           top: state.bottom - state.top + "px",
+          condition: false,
         });
+        setTransform("99.6%");
       }
 
-      console.log(height, "running");
       for (let i = 0; i < state.scrollValues.length; i++) {
         if (
           height > state.scrollValues[i].valueA &&

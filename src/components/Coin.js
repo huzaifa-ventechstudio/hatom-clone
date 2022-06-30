@@ -7,6 +7,7 @@ export default function Coin({ transform, coinStyle }) {
       style={{
         backgroundPositionY: transform,
         top: coinStyle.top,
+        position: coinStyle.position,
       }}
     ></div>
   );

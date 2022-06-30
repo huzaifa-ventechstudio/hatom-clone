@@ -39,7 +39,7 @@ export default function Understanding() {
                   <h3>{el.title}</h3>
                   <p>{el.description}</p>
                   <a href="#">
-                    Learn More <img src={Arrow} />
+                    Learn More <img src={Arrow} alt="Arrow Icon" />
                   </a>
                 </div>
               </div>

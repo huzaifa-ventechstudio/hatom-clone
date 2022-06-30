@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Haas";
-  src: url("./assets/font/NHaasGroteskTXPro-55Rg.woff"),
-    url("./assets/font/NHaasGroteskTXPro-65Md.woff"),
-    url("./assets/font/NHaasGroteskTXPro-75Bd.woff");
+  src: url("./assets/font/NHaasGroteskTXPro-55Rg.woff") format("woff"),
+    url("./assets/font/NHaasGroteskTXPro-65Md.woff") format("woff"),
+    url("./assets/font/NHaasGroteskTXPro-75Bd.woff") format("woff");
 }
 
 body {
@@ -116,8 +116,8 @@ header .button-container button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 270px;
-  max-height: 270px;
+  /* height: 270px;
+  max-height: 270px; */
   z-index: 2;
   top: 30vw;
   margin-left: 6vw;
@@ -129,7 +129,6 @@ header .button-container button {
   background-image: url("./assets/images/img65.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  position: absolute;
   margin: 0 auto;
 }
 
