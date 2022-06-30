@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hatom-clone/static/css/main.2a11e17e.css",
+    "main.css": "/hatom-clone/static/css/main.7a319d94.css",
     "main.js": "/hatom-clone/static/js/main.9e46058d.js",
     "static/js/787.1e8c3623.chunk.js": "/hatom-clone/static/js/787.1e8c3623.chunk.js",
     "static/media/bg.svg": "/hatom-clone/static/media/bg.17ce9ea353e21689cd94250cf17d1864.svg",
@@ -21,12 +21,12 @@
     "index.html": "/hatom-clone/index.html",
     "static/media/indicators-web.svg": "/hatom-clone/static/media/indicators-web.ba1bb51c9d7058888c2f.svg",
     "static/media/indicators-mid.svg": "/hatom-clone/static/media/indicators-mid.d03675741312751fdb53.svg",
-    "main.2a11e17e.css.map": "/hatom-clone/static/css/main.2a11e17e.css.map",
+    "main.7a319d94.css.map": "/hatom-clone/static/css/main.7a319d94.css.map",
     "main.9e46058d.js.map": "/hatom-clone/static/js/main.9e46058d.js.map",
     "787.1e8c3623.chunk.js.map": "/hatom-clone/static/js/787.1e8c3623.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a11e17e.css",
+    "static/css/main.7a319d94.css",
     "static/js/main.9e46058d.js"
   ]
 }
