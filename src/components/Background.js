@@ -95,7 +95,7 @@ export default function Background() {
           top: state.bottom - state.top + "px",
           condition: false,
         });
-        setTransform("99.6%");
+        setTransform("0%");
       }
 
       for (let i = 0; i < state.scrollValues.length; i++) {

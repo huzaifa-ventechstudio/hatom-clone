@@ -56,6 +56,12 @@ header {
   margin-right: 10px;
 }
 
+header .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header .button-container button {
   background: linear-gradient(
     90deg,
@@ -71,6 +77,10 @@ header .button-container button {
   color: #fff;
   border-radius: 0.25rem;
   border: none;
+}
+
+.menu-icon {
+  display: none;
 }
 
 #main-container {
@@ -93,6 +103,7 @@ header .button-container button {
   position: absolute;
   width: 100vw;
   left: 0;
+  top: 0;
 }
 #bg-img {
   z-index: 1;
@@ -289,6 +300,13 @@ header .button-container button {
   justify-content: space-between;
   height: 190px;
 }
+
+.partner-container {
+  height: 1119px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
 @media only screen and (max-width: 1279px) {
   #coin {
     width: 18.51vw;
@@ -407,11 +425,45 @@ header .button-container button {
   }
 }
 
-/* @media only screen and (max-width: 640px) {
-  .bg-img,
-  .bg-img-mid,
-  .bg-img-top,
-  .bg-over-light {
-    aspect-ratio: 0.669902;
+@media only screen and (max-width: 712px) {
+  .menu-icon {
+    display: contents;
   }
-} */
+
+  .menu-icon svg {
+    height: 20px;
+    top: 1px;
+    position: relative;
+  }
+
+  header .button-container button {
+    width: 86px;
+    height: 27px;
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  .app-btn {
+    display: none;
+  }
+
+  .header-inner ul {
+    display: none;
+  }
+
+  .header-inner img {
+    width: 97.5px;
+    height: 32.5px;
+  }
+
+  .left-feature,
+  .right-feature {
+    margin-bottom: 75px;
+    margin-top: 5px;
+    width: 295px;
+  }
+
+  .div-feature-top {
+    margin-top: 0px;
+  }
+}
